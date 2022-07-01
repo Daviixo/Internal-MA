@@ -2,26 +2,26 @@ function generateDate() {
     
     var getDate = document.getElementById("dateTime").value;
 
-    console.log("Captured date: " + getDate);
+    // console.log("Captured date: " + getDate);
 
     var date = new Date(getDate);
     currentMonth = date.getUTCMonth();
     finalDay = date.getDay();
     date = date.toUTCString();
-    console.log("Getting month... " + currentMonth);
-    console.log("My 1st DATE: " + date);
-    console.log("My 1st DATE 2: " + date.toISOString);
+    // console.log("Getting month... " + currentMonth);
+    // console.log("My 1st DATE: " + date);
+    // console.log("My 1st DATE 2: " + date.toISOString);
 
     // Example: Thu, 30 Jun 2022 22:49:00 GMT
 
     splitDate = date.split(" ");
-    console.log("SPLIT: " + splitDate);
-    console.log("SPLIT0: " + splitDate[0]);
-    console.log("SPLIT1: " + splitDate[1]);
-    console.log("SPLIT2: " + splitDate[2]);
-    console.log("SPLIT3: " + splitDate[3]);
-    console.log("SPLIT4: " + splitDate[4]);
-    console.log("SPLIT5: " + splitDate[5]);
+    // console.log("SPLIT: " + splitDate);
+    // console.log("SPLIT0: " + splitDate[0]);
+    // console.log("SPLIT1: " + splitDate[1]);
+    // console.log("SPLIT2: " + splitDate[2]);
+    // console.log("SPLIT3: " + splitDate[3]);
+    // console.log("SPLIT4: " + splitDate[4]);
+    // console.log("SPLIT5: " + splitDate[5]);
 
     // Splitting the date
 
@@ -42,16 +42,16 @@ function generateDate() {
 
     // To double check the event's parameters
 
-    console.log("Final year: " + splitYear);
-    console.log("Final Month: " + splitMonth);
-    console.log("Final Month (#): " + currentMonth);
-    console.log("Final Day: " + splitDay);
-    console.log("Final Hour: " + splitHour);
-    console.log("Final Minutes One: " + splitMinutesOne);
-    console.log("Final Minutes Two: " + splitMinutesTwo);
+    // console.log("Final year: " + splitYear);
+    // console.log("Final Month: " + splitMonth);
+    // console.log("Final Month (#): " + currentMonth);
+    // console.log("Final Day: " + splitDay);
+    // console.log("Final Hour: " + splitHour);
+    // console.log("Final Minutes One: " + splitMinutesOne);
+    // console.log("Final Minutes Two: " + splitMinutesTwo);
 
-    console.log("HOUR: " + splitHour);
-    console.log("MINUTES: " + splitMinutes);
+    // console.log("HOUR: " + splitHour);
+    // console.log("MINUTES: " + splitMinutes);
 
     finalSplitMinutes = splitMinutesOne + splitMinutesTwo;
 
