@@ -62,9 +62,7 @@ function generateDate() {
     var wd = new Intl.DateTimeFormat('en', { weekday: 'long' }).format(d);
     var ti = new Intl.DateTimeFormat('en', { hour: 'numeric', hour12: true, minute: '2-digit'}).format(d);
 
-    // Let's add period (AM/PM) to our time.
-
-     // Example: Tuesday, March 8th at 06:00 AM UTC
+    // Example: Tuesday, March 8th at 06:00 AM UTC
 
     alert("Allan's format: " + wd + ", " + mo + " " + da + " at " + ti + " UTC");
 
