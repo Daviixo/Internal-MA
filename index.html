@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/nezukoicon.ico">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script type="text/javascript" src="js/date.js"></script>
+
+    <p><img id="gotologo" src="images/GoTo_SLogo.png" alt="gotologo" width="92" height="41"></p>
+
+    <p style="text-align:center;"><img src="images/noclogo.png" alt="Logo" width="375" height="200"></p>
+
+    <body style="background: rgba(0, 0, 0, 0.767)" body></body>
+
+    </head>
+
+    <form>
+
+        <title>NOC - Internal MA</title>
+
+        <div>
+
+            <div class="center">
+                <h1>Internal MA</h1>
+                <select onchange="location = this.options[this.selectedIndex].value;">
+                    <option value="#">GoTo Another Form</option>
+                    <option value="#">Nothing yet :c</option>
+                </select>
+            </div><br>
+
+            <div class="table-responsive"><label><strong>Date/Time</strong></label></div>
+            
+            <div class="">
+                    <input type="datetime-local" id="dateTime" class="form-control" value="" />
+            </div><br>
+
+                </div>
+
+                <button type="button" class="btn btn-success" value="Copy" id="copy" onclick="generateDate();">Get Date</button><br><br>
+
+                <button type="button" class="btn btn-danger" onclick="location.reload();">
+                    Reset
+                </button>
+
+                <br><br><br>
+               
+
+    </form>
+
+</html>
